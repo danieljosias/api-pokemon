@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémons</title>
+     <!--Favicon-->
+     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">   
+     
+     <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap" rel="stylesheet">
+ 
+     <!--CSS-->
+     <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <img class="logo" src="img/pokemon-logo.png" alt="logo">
+        <ul class="list">
+            <li class="list-item">
+                <a class="list-link" href="/index.html">Home</a>
+            </li>
+            <li class="list-item">
+                <a class="list-link" href="/pokemons.html" target="_blanck">Pokémons</a>
+            </li>
+            <li class="list-item">
+                <a class="list-link" href="#">Pokébola</a>
+            </li>
+            <li class="list-item">
+                <a class="list-link" href="#">Pokédex</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Seção Pokébola-->
+    <section class="pokebola">
+        <h1 class="pokebola-title">Pokébola</h1>
+        <div class="pokebola-container">
+            <div class="pokebola-01">
+
+                <h2 class="pokebola-subtitle">Repeat Ball</h2>
+                <img src="img/pokebola-01.png" alt="repeat ball" width="200">
+                <div class="pokebola-text-container">
+                    <p class="pokebola-text">A Poké Bola mais fraquinha da nossa lista.
+                    Ela é interessante para quem está procurando
+                    uma Nature ou Ability específica, pois sua taxa
+                    de captura triplica ao ser utilizada em Pokémon
+                    que o jogador já tenha capturado anteriormente.</p>
+                </div>
+                
+            </div>
+            <div class="pokebola-02">
+                <h2 class="pokebola-subtitle">Timer Ball</h2>
+                <img src="img/pokebola-02.png" alt="timer ball">
+                <div class="pokebola-text-container">
+                <p class="pokebola-text">Devagar e sempre. Se você se identifica com esse
+                ditado, então a Timer Ball é perfeita para o seu estilo.
+                Sua taxa de captura vai aumentando a cada turno que passa,
+                podendo atingir um máximo de quatro vezes o potencial de uma Poké Bola comum.</p>
+                </div>
+                
+            </div>
+            <div class="pokebola-03">
+                <h2 class="pokebola-subtitle">Level Ball</h2>
+                <img src="img/pokebola-03.png" alt="level ball" width="200">
+                <div class="pokebola-text-container">
+                    <p class="pokebola-text">Uma excelente opção para o late game. Quanto mais forte o seu Pokémon em relação ao monstrinho selvagem, melhor é a performance dela. É excelente para quem gosta de completar a Pokédex após a liga. Facilita demais o trabalho de capturar aqueles Pokémon fraquinhos que ficaram para trás.</p>
+                </div>
+            </div>
+            <div class="pokebola-04">
+                <h2 class="pokebola-subtitle">Quick Ball</h2>
+                <img src="img/pokebola-04.png" alt="quick ball">
+                <div class="pokebola-text-container">
+                    <p class="pokebola-text">Particularmente a minha favorita, nunca ando sem pelo menos trinta dela na mochila. Se a Quick Ball for a sua primeira ação durante uma batalha, você tem um multiplicador de quatro vezes (quarta geração) ou cinco vezes (da quinta geração em diante).</p>
+                </div>
+            </div>
+            <div class="pokebola-05">
+                <h2 class="pokebola-subtitle">Dusk Ball</h2>
+                <img src="img/pokemon-05.png" alt="dusk ball">
+                <div class="pokebola-text-container">
+                    <p class="pokebola-text">Enquanto as demais bolas citadas aqui precisam que você tenha atenção com os níveis e outros detalhes, a Dusk Ball apenas exige que a batalha seja em uma caverna ou à noite. Condições extremamente fáceis de se cumprir, o que a torna a Poké Bola especial mais consistente de todas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="rodape">
+        <p>E-mail: pokémon@domínio.com</p>
+        <p>Daniel Josias © 2021</p>
+        <p>Telefone: (xx) xxxx - xxxx</p>
+        <button id="top">↑</button>
+    </footer>
+
+    <!--Scroll Animado-->
+    <script>
+        function scrollTo(element){
+            document.querySelector(element).scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+
+        document.querySelector('#top').addEventListener('click', function(e){
+            scrollTo(".navbar")
+        })
+    </script>
+
+    <!--Script Carousel Slider-->
+    <script src="js/card-slider1.js"></script>
+    <script src="js/card-slider2.js"></script>
+    <script src="js/card-slider3.js"></script>
+
+    <!--Script API-->
+    <script src="js/API.js"></script>
+</body>
+</html>

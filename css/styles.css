@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    background-color: #000;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+/*Barra de Rolagem*/
+
+/* personalizar a barra em geral, aqui estou definindo 20px de largura para a barra vertical
+  e 20px de altura para a barra horizontal */
+  ::-webkit-scrollbar {
+    width:20px;
+    height: 10px;
+    }
+     
+    /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo branco*/
+    ::-webkit-scrollbar-track {
+        background:#FFF;
+    }
+     
+    /* aqui é a alça da barra, que demonstra a altura que você está na página
+    estou colocando uma cor laranja nela*/
+    ::-webkit-scrollbar-thumb {
+        background:orange;
+    }
+
+    /* quando passar o mouse por cima da alça da barra, ela muda para laranja */
+    ::-webkit-scrollbar-thumb:hover{
+        background:orange;
+    }
+
+/*Navbar*/
+.navbar{
+    background-color: orange;
+}
+
+.logo{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 170px;
+    height: 70px;
+}
+
+.list{
+    margin-top: 30px;
+    display: flex;
+    float: right;
+}
+
+.list-item{
+    margin-right: 30px;
+    list-style: none;
+}
+
+.list-link{
+    font-weight: bold;
+    font-size: 14pt;
+    color:#FFF;
+    text-decoration: none;
+}
+
+/*Seção Water Pokemon*/
+.card-title{
+    color: orange;
+    margin-top: 10px;
+    font-size: 24pt;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel{
+    width: 760px;
+    margin: 0px 300px 0px;
+    overflow: hidden;
+}
+
+.carosuel-card{
+    align-items: center;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.25s;
+}
+
+.card-container{
+    height: 300px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width:300px;
+    height:150px;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+
+.card-inner{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#imagem-01, #imagem-02, #imagem-03, #imagem-04,#imagem-05{
+
+}
+
+#nome-01, #nome-02, #nome-03, #nome-04, #nome-05{
+    color: orange;
+    text-align: center;
+}
+
+#numero-01, #numero-02, #numero-03, #numero-04, #numero-05{
+    text-align: center;
+}
+.carousel-button-container{
+    padding: 10px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel-button{
+    background: orange;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0.25;
+    transition: opacity 0.25s;
+    z-index: 1;   
+}
+
+.carousel-button:hover{
+    opacity: 0.5;
+}
+
+/*Seção Fire Pokémon*/
+.carousel2{
+    width: 760px;
+    margin: 0px 300px 0px;
+    overflow: hidden;
+}
+
+.carosuel-card2{
+    align-items: center;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.25s;
+}
+
+#imagem-06, #imagem-07, #imagem-08, #imagem-09,#imagem-010{
+
+}
+
+#nome-06, #nome-07, #nome-08, #nome-09, #nome-010{
+    color: orange;
+    text-align: center;
+}
+
+#numero-07, #numero-07, #numero-08, #numero-09, #numero-010{
+    text-align: center;
+}
+
+.carousel-button-container2{
+    padding: 10px;
+    margin-top: -40px;
+    text-align: center;
+}
+
+.carousel-button2{
+    background: orange;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0.25;
+    transition: opacity 0.25s;
+    z-index: 1;   
+}
+
+.carousel-button2:hover{
+    opacity: 0.5;
+}
+
+/*Seção Insect Pokémon*/
+.carousel3{
+    width: 760px;
+    margin: 0px 300px 0px;
+    overflow: hidden;
+}
+
+.carosuel-card3{
+    align-items: center;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.25s;
+}
+
+#imagem-011, #imagem-012, #imagem-013, #imagem-014,#imagem-015{
+
+}
+
+#nome-011, #nome-012, #nome-013, #nome-014, #nome-015{
+    color: orange;
+    text-align: center;
+}
+
+#numero-011, #numero-012, #numero-013, #numero-014, #numero-015{
+    text-align: center;
+}
+
+.carousel-button-container3{
+    padding: 10px;
+    margin-top: -40px;
+    text-align: center;
+}
+
+.carousel-button3{
+    background: orange;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 3rem;
+    opacity: 0.25;
+    transition: opacity 0.25s;
+    z-index: 1;   
+}
+
+.carousel-button3:hover{
+    opacity: 0.5;
+}
+
+/*Seção news*/
+.news{
+    margin-top: 40px;
+}
+
+.news-card-title{
+    font-size: 24pt;
+    padding: 10px;
+    background-color: orange;
+    text-align: center;
+}
+
+.news-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+    cursor: pointer;
+}
+
+.news-card{
+    border: 1px solid orange;
+    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.news-card-inner > img{
+    width: 300px;
+    height: 200px;
+}
+
+.news-card-inner > p{
+    text-align: center;
+    margin-top: 10px;
+} 
+
+/*Seção Movies*/
+.movies{
+
+}
+.movies-title{
+    font-size: 24pt;
+    padding: 10px;
+    background-color: orange;
+    text-align: center;
+}
+.movies-container{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.movies-wrapper{
+    padding: 5px;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+
+.movies-text{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+/*Seção Pokébola*/
+.pokebola{
+
+}
+
+.pokebola-title{
+    font-size: 24pt;
+    padding: 10px;
+    color: orange;
+    text-align: center;
+}
+
+.pokebola-container{
+    cursor: pointer;
+}
+
+.pokebola-01, .pokebola-02, .pokebola-03, .pokebola-04, .pokebola-05{
+    margin: 10px;
+    border: 1px solid orange;
+    text-align: center;
+}
+
+.pokebola-subtitle{
+    margin: 20px;
+}
+
+.pokebola-text-container{
+    margin-top: 20px;
+}
+
+.pokebola-text{
+    padding-bottom: 20px;
+    font-size: 14pt;
+    margin: 0px 35%;
+}
+
+/*Footer*/
+.rodape{
+    background-color: orange;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.rodape > p{
+    margin-top: 100px;
+    font-size: 16pt;
+}
+
+#top{
+    font-size: 14pt;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: #000;
+    cursor: pointer;
+    position: relative;
+    top: 95px;
+    width: 40px;
+    height: 40px;
+}

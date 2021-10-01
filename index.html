@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémons</title>
+    <!--CSS Glider-->
+    <link rel="stylesheet" href="glider/glider.min.css" type="text/css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">   
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <img class="logo" src="img/pokemon-logo.png" alt="logo">
+        <ul class="list">
+            <li class="list-item">
+                <a class="list-link" href="/index.html">Home</a>
+            </li>
+            <li class="list-item">
+                <a class="list-link" href="/pokemons.html" target="_blanck">Pokémons</a>
+            </li>
+            <li class="list-item">
+                <a class="list-link" href="/pokebola.html" target="_blanck">Pokébola</a>
+            </li>
+            <li class="list-item">
+                <a class="list-link" href="#">Pokédex</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--GLIDER-->
+    <div class="glider-contain">
+        <div class="glider">
+            <img class="glider-img" src="img/slider-01.jpg" alt="slider1" >
+            <img class="glider-img" src="img/slider-02.jpeg" alt="slider2" >
+        </div>
+      
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+    </div>
+    
+    <!--Seção News-->
+    <section class="news">
+        <div class="news-card-title">Notícias</div>
+        <div class="news-card-container">
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <img src="img/card1.png" alt="Pikachu">
+                    <p>Nome: Pikachu</p>
+                    <p>Tipo: Elétrico</p>
+                    <p>Número: 025</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <img src="img/card2.jpg" alt="Raichu">
+                    <p>Nome: Raichu</p>
+                    <p>Tipo: Elétrico</p>
+                    <p>Número: 026</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <img src="img/card3.png" alt="Magnemite">
+                    <p>Nome: Magnemite</p>
+                    <p>Tipo: Elétrico</p>
+                    <p>Número: 081</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-card-container">
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <img src="img/card4.jpg" alt="Charmander">
+                    <p>Nome: Charmander</p>
+                    <p>Tipo: Fogo</p>
+                    <p>Número: 004</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <img src="img/card5.jpg" alt="Mankey">
+                    <p>Nome: Mankey</p>
+                    <p>Tipo: Luatdor</p>
+                    <p>Número: 056</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-card-inner">
+                    <img src="img/card6.png" alt="Alakazam">
+                    <p>Nome: Alakazam</p>
+                    <p>Tipo: Psíquico</p>
+                    <p>Número: 065</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seção Movies-->
+    <section class="movies"> 
+        <div class="movies-title">Vídeos</div>
+        <div class="movies-container">
+            <div class="movies-wrapper">
+                <p class="movies-text">Abertura do Pokémon Indigo</p>
+                <video width="450" height="250" poster="img/thumbnail.jpg" controls >
+                    <source src="video/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="movies-wrapper">
+                <p class="movies-text">Os 5 momentos mais emocionantes</p>
+                <video width="450" height="250" controls >
+                    <source src="video/video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="rodape">
+        <p>E-mail: pokémon@domínio.com</p>
+        <p>Daniel Josias © 2021</p>
+        <p>Telefone: (xx) xxxx - xxxx</p>
+        <button id="top">↑</button>
+    </footer>
+    
+    <!--Scroll Animado-->
+    <script>
+        function scrollTo(element){
+            document.querySelector(element).scrollIntoView({
+                behavior: "smooth"
+            })
+        }
+
+        document.querySelector('#top').addEventListener('click', function(e){
+            scrollTo(".navbar")
+        })
+    </script>
+
+    <!--Script Carousel Glider-->
+    <script src="glider/glider.min.js"></script>
+
+    <!--Configurações Carousel Glider-->
+    <script>
+       new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        dots: '#dots',
+        draggable: true,
+        arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+        }
+        });
+    </script>
+
+    
+</body>
+</html>
